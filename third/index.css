@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shell{
+    width: 90%;
+    height: 700px;
+    display: flex;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 10px;
+    border: 10px #fff;
+    box-shadow: 10px 10px 20px #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.box>img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    font-size: 20px;
+    font-weight: 900;
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box:hover>img{
+    width: 100%;
+    height: 100%;
+}
